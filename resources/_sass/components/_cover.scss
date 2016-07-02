@@ -1,0 +1,83 @@
+@mixin coverElemSpacing {
+  margin: 0 0 $elemSpacing 0;
+  padding: 0;
+}
+
+.cover {
+  height: 98.6%;
+
+  .page-wrap {
+    justify-content: center;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 0;
+
+    .avatar {
+      @include coverElemSpacing;
+    }
+
+    .cover-title {
+      font-size: 2.6rem;
+      font-weight: 900;
+      @include coverElemSpacing;
+    }
+
+    .cover-strapline {
+      font-weight: 100;
+      font-style: italic;
+      font-size: 1.6rem;
+      @include coverElemSpacing;
+    }
+
+    .social-nav {
+      font-size: 2.4rem;
+      @include coverElemSpacing;
+
+      .nav-item {
+        padding: 0 0.4rem;
+
+        .fa-lastfm {
+          font-weight: 900;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mobileDeviceMaxWidth) {
+  .cover {
+    .main-content {
+      .cover-title {
+        line-height: 2.8rem;
+      }
+
+      .cover-strapline {
+        font-size: 1.5rem;
+      }
+
+      .page-wrap {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media (max-height: $mobileDeviceMaxHeight) {
+  .cover {
+    height: auto;
+
+    .page-wrap {
+      height:auto;
+    }
+  }
+}

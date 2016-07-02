@@ -1,0 +1,99 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: $primaryFontColor;
+  line-height: 2rem;
+  border-top: 0.6rem solid $primaryColor;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: $primaryColor;
+}
+
+nav {
+  ul {
+    @include listReset;
+
+    li {
+      display: inline-flex;
+    }
+  }
+}
+
+p {
+  margin: $elemSpacing 0;
+  padding: 0;
+}
+
+ul, ol {
+  margin: $elemSpacing 0;
+}
+
+li > ul {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: $elemSpacing 0;
+  padding: 0;
+}
+
+strong {
+  font-weight: 600;
+}
+
+blockquote {
+  border-left: 0.6rem solid $secondaryColor;
+  padding-left: 1.6rem;
+  margin: 0 0 0 1.6rem;
+}
+
+hr {
+  display: block;
+  height: 0.15rem;
+  border: 0;
+  border-top: 0.15rem solid $secondaryColor;
+  margin: $elemSpacing 0;
+  padding: 0;
+}
+
+pre {
+  background-color: $secondaryColor;
+  padding: 1rem;
+  font-size: 0.95rem;
+  margin: $elemSpacing 0;
+  overflow-x: auto;
+}
+
+table {
+  margin: $elemSpacing 0;
+  width: 100%;
+  border: solid thin $secondaryColor;
+  border-collapse: collapse;
+}
+
+thead {
+  font-weight: 300;
+  background-color: $secondaryColor;
+}
+
+th, td {
+  padding: 0.6rem;
+  border: solid thin $secondaryColor;
+}
+
+img {
+  margin: $elemSpacing auto;
+  display: block;
+}

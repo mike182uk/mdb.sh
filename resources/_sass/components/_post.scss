@@ -1,0 +1,26 @@
+.main-content {
+  margin-bottom: $elemSpacing;
+
+  .post-header, .page-header {
+    text-align: center;
+  }
+
+  .post-header {
+    .title {
+      font-size: 2rem;
+      margin-bottom: $elemSpacing;
+    }
+
+    .date {
+      font-weight: lighter;
+      margin-bottom: $elemSpacing;
+      display: block;
+    }
+  }
+
+  p {
+    a {
+      text-decoration: underline;
+    }
+  }
+}
