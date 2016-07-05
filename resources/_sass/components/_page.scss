@@ -3,3 +3,13 @@
   max-width: 46rem;
   padding: 0 3rem;
 }
+
+.main-content {
+  margin-bottom: $elemSpacing;
+
+  p {
+    a {
+      text-decoration: underline;
+    }
+  }
+}

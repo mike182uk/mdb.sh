@@ -1,6 +1,4 @@
 .main-content {
-  margin-bottom: $elemSpacing;
-
   .post-header, .page-header {
     text-align: center;
   }
@@ -15,12 +13,6 @@
       font-weight: lighter;
       margin-bottom: $elemSpacing;
       display: block;
-    }
-  }
-
-  p {
-    a {
-      text-decoration: underline;
     }
   }
 }
