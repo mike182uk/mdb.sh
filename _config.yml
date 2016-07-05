@@ -9,6 +9,9 @@ disqus_shortname: michaelbarrett-blog
 # Gravatar settings
 gravatar_username_hash: 730c03c7ecdbd654028b3beb5f592290
 
+# Google analytics settings
+google_analytics_site_id: ''
+
 # Social usernames
 twitter_username: mike182uk
 github_username: mike182uk
