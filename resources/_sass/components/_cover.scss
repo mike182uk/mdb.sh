@@ -19,6 +19,7 @@
     flex-direction: column;
     text-align: center;
     padding: 3rem 0;
+    margin-bottom: 0;
 
     .avatar {
       @include coverElemSpacing;
