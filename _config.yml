@@ -22,7 +22,7 @@ linkedin_username: michaelbarrett88
 markdown: kramdown
 kramdown:
   input: GFM
-exclude: [node_modules, gulpfile.js, package.json, readme.md]
+exclude: [node_modules, gulpfile.js, package.json, Gemfile, README.md]
 gems:
   - jekyll-feed
   - jekyll-sitemap
