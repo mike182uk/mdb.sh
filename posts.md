@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /posts/
+title: Posts
 ---
 
 <ul class="post-archive">

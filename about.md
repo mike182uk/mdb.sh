@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /about/
+title: About
 ---
 
 <img src="https://www.gravatar.com/avatar/{{ site.gravatar_username_hash }}?s=600" height="200" alt="{{ site.title }}" class="avatar center" />
