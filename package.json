@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build": "NODE_ENV=production JEKYLL_ENV=production gulp build"
+  },
   "devDependencies": {
     "browser-sync": "^2.13.0",
     "gulp": "^3.9.1",

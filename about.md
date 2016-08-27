@@ -1,5 +1,7 @@
 ---
 layout: page
+excerpt: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+tags: lorem, ipsum, dolor, sit, amet
 permalink: /about/
 title: About
 ---

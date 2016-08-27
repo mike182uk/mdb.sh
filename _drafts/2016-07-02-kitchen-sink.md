@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lorem ipsum doller
+title: Kitchen Sink
 excerpt: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
 tags: lorem, ipsum, dolor, sit, amet
 date: 2016-07-02 12:00:00 +0100

@@ -1,5 +1,7 @@
 ---
 layout: default
+excerpt: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+tags: lorem, ipsum, dolor, sit, amet
 permalink: /posts/
 title: Posts
 ---
@@ -19,7 +21,7 @@ title: Posts
     <li>
       <a href="{{ post.url }}" class="post">
         <span class="post-title">{{ post.title }}</span>
-        <span class="post-date">{{ post.date | date: '%B %d, %Y' }}</span>
+        <span class="post-date">{{ post.date | date: '%d %B, %Y' }}</span>
       </a>
     </li>
   {% endfor %}

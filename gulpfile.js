@@ -3,6 +3,8 @@ const childProcess = require('child_process')
 const gulp = require('gulp')
 const sass = require('gulp-sass')
 
+const env = process.env.NODE_ENV || 'development'
+
 /**
  * Process SASS
  */
@@ -25,10 +27,16 @@ gulp.task('sass', () => {
  */
 
 gulp.task('jekyll-build', done => {
-  browserSync.notify('Running jekyll build');
+  browserSync.notify('Running jekyll build')
+
+  let jekyllArgs = ['build']
+
+  if (env == 'development') {
+    jekyllArgs = jekyllArgs.concat(['--incremental', '--drafts'])
+  }
 
   return childProcess
-    .spawn('jekyll' , ['build', '--incremental'], { stdio: 'inherit' })
+    .spawn('jekyll' , jekyllArgs, { stdio: 'inherit' })
     .on('exit', code => {
       if (code !== 0) browserSync.notify('jekyll build failed, check the terminal')
     })
@@ -39,7 +47,7 @@ gulp.task('jekyll-build', done => {
  * Jekyll rebuild
  */
 
-gulp.task('jekyll-rebuild', ['jekyll-build'], () => browserSync.reload())
+gulp.task('jekyll-rebuild', ['jekyll-build'], browserSync.reload)
 
 /**
  * Serve site with BrowserSync
@@ -58,7 +66,7 @@ gulp.task('serve', () => {
  */
 
 gulp.task('watch', () => {
-  gulp.watch('./resources/_sass/**/*.scss', ['sass']);
+  gulp.watch('./resources/_sass/**/*.scss', ['sass'])
   gulp.watch(['*.html', '*.md', '_layouts/**/*', '_includes/**/*', '_posts/*', '_config.yml'], ['jekyll-rebuild'])
 });
 
