@@ -99,3 +99,7 @@ img {
   display: block;
   max-width: 100%;
 }
+
+::selection {
+  background-color: lighten($primaryColor, 30);
+}
