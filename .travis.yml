@@ -8,6 +8,10 @@ before_install:
 
 sudo: false
 
+branches:
+  only:
+    - master
+
 cache:
   directories:
     - node_modules
