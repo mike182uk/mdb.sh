@@ -19,7 +19,7 @@ npm install
 
 ## Development
 
-Run `gulp` to start developing. This will watch the projects files for changes and start a local webserver that can be accessed on [http://localhost:3000](http://localhost:3000).
+Run `gulp` to start developing. This will watch the project files for changes and start a local web server that can be accessed on [http://localhost:3000](http://localhost:3000).
 
 ## Deployment
 
@@ -31,3 +31,4 @@ The site will be deployed automatically when the master branch is pushed to gith
 - [Gulp](http://gulpjs.com/)
 - [BrowserSync](https://www.browsersync.io/)
 - [SASS](http://sass-lang.com/)
+- [CoffeeScript](http://coffeescript.org/)
