@@ -1,6 +1,7 @@
 browserSync  = require 'browser-sync'
 childProcess = require 'child_process'
 coffee       = require 'gulp-coffee'
+execSync     = require('child_process').execSync
 gulp         = require 'gulp'
 plumber      = require 'gulp-plumber'
 sass         = require 'gulp-sass'
@@ -66,7 +67,27 @@ gulp.task 'jekyll-rebuild', ['jekyll-build'], browserSync.reload
 #
 
 gulp.task 'serve', ->
-  browserSync server: baseDir: '_site'
+  port = 3000
+  https = false
+  openBrowser = true
+
+  try
+    execSync 'ps cax | grep "Google Chrome$"'
+    existingBrowserTab = JSON.parse execSync "osascript utils/chrome/find-tab-by-url.applescript #{if https then "https" else "http"}://localhost:#{port}/"
+
+    browserSync.emitter.on 'init', () ->
+      execSync "osascript utils/chrome/activate-tab.applescript #{existingBrowserTab.window} #{existingBrowserTab.tab}",
+        stdio: 'ignore'
+
+    openBrowser = false
+  catch err
+    # noop
+
+  browserSync
+    port: port
+    https: https
+    open: openBrowser
+    server: baseDir: '_site'
 
 #
 # Watchers
