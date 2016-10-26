@@ -13,8 +13,8 @@
 ```bash
 gem install bundler
 bundle install
-npm install -g gulp
-npm install
+npm install -g gulp yarn
+yarn install
 ```
 
 ## Development

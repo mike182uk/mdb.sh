@@ -23,11 +23,11 @@ env:
 before_script:
   - gem install bundler
   - bundle install
-  - npm install -g gulp-cli
-  - npm install
+  - npm install -g gulp yarn
+  - yarn install
 
 script:
-  - npm run build
+  - yarn run build
 
 after_script:
   - TMP_DIR=$(mktemp -d)
