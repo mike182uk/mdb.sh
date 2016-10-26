@@ -49,11 +49,11 @@ gulp.task 'coffee', ->
 gulp.task 'jekyll-build', (done) ->
   browserSync.notify 'Running jekyll build'
 
-  jekyllArgs = ['build']
+  jekyllArgs = ['exec', 'jekyll', 'build']
   jekyllArgs = jekyllArgs.concat ['--incremental', '--drafts'] if env == 'development'
 
   childProcess
-    .spawn 'jekyll' , jekyllArgs, stdio: 'inherit'
+    .spawn 'bundle' , jekyllArgs, stdio: 'inherit'
     .on 'exit', (code) -> browserSync.notify 'jekyll build failed, check the terminal' if code isnt 0
     .on 'close', done
 
