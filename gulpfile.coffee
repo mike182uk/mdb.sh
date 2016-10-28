@@ -61,7 +61,7 @@ gulp.task 'jekyll-build', (done) ->
 # Jekyll rebuild
 #
 
-gulp.task 'jekyll-rebuild', ['jekyll-build'], browserSync.reload
+gulp.task 'jekyll-rebuild', ['jekyll-build'], () -> browserSync.reload()
 
 #
 # Serve site with BrowserSync
