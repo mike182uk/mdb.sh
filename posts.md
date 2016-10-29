@@ -5,6 +5,8 @@ permalink: /posts/
 title: Posts
 ---
 
+{% if site.posts.size > 0 %}
+
 <ul class="post-archive">
   {% for post in site.posts %}
     {% unless post.next %}
@@ -25,3 +27,11 @@ title: Posts
     </li>
   {% endfor %}
 </ul>
+
+{% else %}
+
+<div class="post-archive">
+  <p class="no-posts">There isn't any posts published at the moment 😞</p>
+</div>
+
+{% endif %}

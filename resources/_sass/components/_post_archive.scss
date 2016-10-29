@@ -30,6 +30,13 @@
       }
     }
   }
+
+  .no-posts {
+    text-align: center;
+    font-weight: bold;
+    margin: 15rem 0;
+    font-size: 1.4rem;
+  }
 }
 
 @media (max-width: $mobileDeviceMaxWidth) {
