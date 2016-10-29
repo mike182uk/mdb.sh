@@ -29,5 +29,4 @@ exclude: [node_modules, gulpfile.coffee, package.json, Gemfile, README.md, utils
 gems:
   - jekyll-feed
   - jekyll-sitemap
-  - jemoji
   - jekyll-email-protect

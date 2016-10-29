@@ -31,7 +31,7 @@ title: Posts
 {% else %}
 
 <div class="post-archive">
-  <p class="no-posts">There isn't any posts published at the moment 😞</p>
+  <p class="no-posts">I've not published any posts yet 😞</p>
 </div>
 
 {% endif %}
