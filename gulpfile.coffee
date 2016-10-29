@@ -87,6 +87,7 @@ gulp.task 'watch', ->
     '_layouts/**/*'
     '_includes/**/*'
     '_posts/*'
+    '_drafts/*'
     '_config.yml'
   ], ['jekyll-rebuild']
 
