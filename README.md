@@ -1,5 +1,7 @@
 # [michaelbarrett.io](https://michaelbarrett.io)
 
+[![Build Status](https://img.shields.io/travis/mike182uk/michaelbarrett.io.svg?style=flat-square)](http://travis-ci.org/mike182uk/michaelbarrett.io)
+
 ## Prerequisites
 
 1. [Node](http://nodejs.org/)
