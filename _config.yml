@@ -1,7 +1,10 @@
 # Site settings
-title: Michael Barrett - Full-stack Software Engineer
-description: Michael Barrett is a Full-stack Software Engineer based in Leeds, UK
+title: Michael Barrett - Fullstack Software Engineer
+description: Michael Barrett is a Fullstack Software Engineer based in Leeds, UK
 url: https://michaelbarrett.io
+
+# Email address
+email: hi@michaelbarrett.io
 
 # Disqus settings
 disqus_shortname: michaelbarrett-blog
@@ -27,3 +30,4 @@ gems:
   - jekyll-feed
   - jekyll-sitemap
   - jemoji
+  - jekyll-email-protect

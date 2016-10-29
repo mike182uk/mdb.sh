@@ -1,7 +1,6 @@
 ---
 layout: default
-excerpt: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-tags: lorem, ipsum, dolor, sit, amet
+excerpt: Posts by Michael Barrett - Fullstack Software Engineer
 permalink: /posts/
 title: Posts
 ---
