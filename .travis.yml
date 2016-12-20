@@ -13,6 +13,8 @@ branches:
     - master
 
 cache:
+  yarn: true
+  bundler: true
   directories:
     - node_modules
 
@@ -23,21 +25,10 @@ env:
 before_script:
   - gem install bundler
   - bundle install
-  - npm install -g gulp yarn
-  - yarn install
+  - npm install -g gulp
 
 script:
-  - yarn run build
+  - npm run build
 
-after_script:
-  - TMP_DIR=$(mktemp -d)
-  - GH_REPO=github.com/${TRAVIS_REPO_SLUG}
-  - git clone --branch gh-pages git://${GH_REPO} ${TMP_DIR}
-  - rm -rf ${TMP_DIR}/*
-  - cp -r _site/* ${TMP_DIR}
-  - cd ${TMP_DIR}
-  - git config user.name "Travis CI"
-  - git config user.email "travis-ci@michaelbarrett.io"
-  - git add -A .
-  - git commit -m "Built from ${TRAVIS_COMMIT}"
-  - git push -q "https://${GH_TOKEN}@${GH_REPO}" gh-pages > /dev/null 2>&1
+after_success:
+  - ./scripts/deploy
