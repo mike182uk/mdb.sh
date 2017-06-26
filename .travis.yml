@@ -10,7 +10,7 @@ sudo: false
 
 branches:
   only:
-    - master
+    - develop
 
 cache:
   yarn: true

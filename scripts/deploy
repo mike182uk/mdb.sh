@@ -3,7 +3,7 @@
 TMP_DIR=$(mktemp -d)
 GH_REPO=github.com/${TRAVIS_REPO_SLUG}
 
-git clone --branch gh-pages git://${GH_REPO} ${TMP_DIR}
+git clone --branch master git://${GH_REPO} ${TMP_DIR}
 
 rm -rf ${TMP_DIR}/*
 cp -r _site/* ${TMP_DIR}
@@ -15,4 +15,4 @@ git config user.email "travis-ci@mdb.sh"
 
 git add -A .
 git commit -m "Built from ${TRAVIS_COMMIT}"
-git push -q "https://${GH_TOKEN}@${GH_REPO}" gh-pages > /dev/null 2>&1
+git push -q "https://${GH_TOKEN}@${GH_REPO}" master > /dev/null 2>&1

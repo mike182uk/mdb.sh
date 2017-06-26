@@ -50,7 +50,7 @@ gulp.task 'jekyll-build', (done) ->
   browserSync.notify 'Running jekyll build'
 
   jekyllArgs = ['exec', 'jekyll', 'build']
-  jekyllArgs = jekyllArgs.concat ['--incremental', '--drafts'] if env == 'development'
+  jekyllArgs = jekyllArgs.concat ['--incremental', '--drafts', '--baseurl=http://localhost:3000'] if env == 'development'
 
   childProcess
     .spawn 'bundle' , jekyllArgs, stdio: 'inherit'

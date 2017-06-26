@@ -25,7 +25,7 @@ Run `gulp` to start developing. This will watch the project files for changes an
 
 ## Deployment
 
-The site will be deployed automatically when the master branch is pushed to GitHub. See [.travis.yml](.travis.yml) for how this is done. The site is hosed on [GitHub Pages](https://pages.github.com/).
+The site will be deployed automatically when the develop branch is pushed to GitHub. See [.travis.yml](.travis.yml) for how this is done. The site is hosed on [GitHub Pages](https://pages.github.com/).
 
 ## Tools Used
 
