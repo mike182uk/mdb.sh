@@ -6,7 +6,7 @@ title: About
 
 <img src="https://www.gravatar.com/avatar/{{ site.gravatar_username_hash }}?s=600" height="200" alt="{{ site.title }}" class="avatar center" />
 
-Hi there! I'm Mike, a fullstack software engineer 🤓 based in [Leeds, UK](https://www.google.co.uk/maps/place/Leeds).
+Hi there! I'm Mike, a fullstack software engineer 🤓 based in [West Yorkshire, UK](https://www.google.co.uk/maps/place/West+Yorkshire).
 
 I'm passionate about building great technical solutions to problems using a variety of technologies, programming languages & development methodologies.
 
