@@ -1,10 +1,10 @@
 # Site settings
 title: Michael Barrett - Fullstack Software Engineer
 description: Michael Barrett is a Fullstack Software Engineer based in Leeds, UK
-url: https://michaelbarrett.io
+url: https://mdb.sh
 
 # Email address
-email: hi@michaelbarrett.io
+email: mike@mdb.sh
 
 # Disqus settings
 disqus_shortname: michaelbarrett-blog
