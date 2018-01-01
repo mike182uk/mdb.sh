@@ -1,6 +1,7 @@
 # Site settings
 title: Michael Barrett - Fullstack Software Engineer
 description: Michael Barrett is a Fullstack Software Engineer based in West Yorkshire, UK
+url: https://mdb.sh
 
 # Email address
 email: mike@mdb.sh
@@ -25,7 +26,7 @@ markdown: kramdown
 kramdown:
   input: GFM
 exclude: [node_modules, gulpfile.coffee, package.json, Gemfile, README.md, yarn.lock, scripts]
-gems:
+plugins :
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-email-protect
