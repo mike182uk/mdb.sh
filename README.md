@@ -10,7 +10,7 @@
 ## Install
 
 1. Clone this repo
-2. `cd` into repo and run:
+2. `cd` into the repo and run:
 
 ```bash
 gem install bundler
@@ -25,7 +25,7 @@ Run `gulp` to start developing. This will watch the project files for changes an
 
 ## Deployment
 
-The site will be deployed automatically when the develop branch is pushed to GitHub. See [.travis.yml](.travis.yml) for how this is done. The site is hosed on [GitHub Pages](https://pages.github.com/).
+The site will be deployed automatically when the develop branch is pushed to GitHub. See [.travis.yml](.travis.yml) for how this is done. The site is hosted on [GitHub Pages](https://pages.github.com/).
 
 ## Tools Used
 
