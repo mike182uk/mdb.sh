@@ -1,0 +1,31 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+
+#__next {
+  @apply h-full;
+}
+/* purgecss end ignore */
+
+::selection {
+  background-color: theme('colors.primaryLight');
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: theme('colors.primary');
+}
+
+main a {
+  text-decoration: underline;
+}
+
+main p {
+  margin: theme('spacing.mainContent') 0;
+}
+
+@tailwind utilities;

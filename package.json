@@ -1,14 +1,40 @@
 {
-  "scripts": {
-    "build": "NODE_ENV=production JEKYLL_ENV=production gulp build"
+  "name": "mdb.sh",
+  "version": "0.0.0",
+  "description": "My personal website",
+  "author": {
+    "name": "Michael Barrett",
+    "email": "mike@mdb.sh",
+    "url": "https://mdb.sh"
   },
-  "devDependencies": {
-    "browser-sync": "^2.13.0",
-    "browser-sync-reuse-tab": "^1.0.1",
-    "gulp": "^3.9.1",
-    "gulp-coffee": "^2.3.2",
-    "gulp-plumber": "^1.1.0",
-    "gulp-sass": "^2.3.2",
-    "gulp-util": "^3.0.7"
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mike182uk/mdb.sh.git"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start",
+    "lint": "standard"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-brands-svg-icons": "^5.12.1",
+    "@fortawesome/react-fontawesome": "^0.1.9",
+    "@fullhuman/postcss-purgecss": "^2.1.0",
+    "@zeit/next-css": "^1.0.1",
+    "autoprefixer": "^9.7.5",
+    "lodash": "^4.17.15",
+    "next": "^9.3.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "standard": "^14.3.3",
+    "tailwindcss": "^1.2.0"
   }
 }
