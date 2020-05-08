@@ -16,9 +16,9 @@ export default function Page ({
         title={seoTitle}
         description={seoDescription}
       />
-      <div className='container mx-auto max-w-3xl px-4'>
+      <div className='container mx-auto max-w-3xl p-4 h-full'>
         <Header />
-        <main>
+        <main className='my-8'>
           {
             showTitle &&
               <h2 className='text-4xl font-black text-center mb-mainContent'>{title}</h2>

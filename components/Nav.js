@@ -4,7 +4,7 @@ export default function Nav ({
   className
 }) {
   return (
-    <nav className={className}>
+    <nav className={`leading-none ${className}`}>
       <ul>
         <li className='inline-block'>
           <Link href='/about'>

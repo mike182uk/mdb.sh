@@ -23,16 +23,16 @@ export default function Index () {
     <>
       <Head />
       <div className='container mx-auto flex h-full'>
-        <main className='m-auto flex flex-col items-center py-4'>
+        <main className='m-auto flex flex-col items-center p-4'>
           <Avatar
             size={150}
-            className='rounded-full shadow-md mb-2'
+            className='rounded-full shadow-md mb-8'
           />
-          <h1 className='text-5xl font-black text-center'>
+          <h1 className='text-5xl font-black text-center leading-none mb-8'>
             <Greeting /> I'm Mike.
           </h1>
-          <h2 className='text-2xl font-hairline text-center mb-6'>Fullstack Software Engineer based in West Yorkshire, UK</h2>
-          <ul className='mb-6'>
+          <h2 className='text-2xl font-hairline text-center leading-none mb-8'>Fullstack Software Engineer based in West Yorkshire, UK</h2>
+          <ul className='mb-8 text-center'>
             {
               [
                 {
