@@ -13,7 +13,7 @@ export default function Avatar ({
       srcSet={`//www.gravatar.com/avatar/${GRAVATAR_USERNAME_HASH}?s=${size * 2} 2x`}
       height={size}
       width={size}
-      className={className}
+      className={`bg-gray-100 ${className}`}
     />
   )
 }
