@@ -21,17 +21,17 @@
     "lint": "standard"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.27",
-    "@fortawesome/free-brands-svg-icons": "^5.12.1",
-    "@fortawesome/react-fontawesome": "^0.1.9",
-    "@fullhuman/postcss-purgecss": "^2.1.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/free-brands-svg-icons": "^5.13.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@fullhuman/postcss-purgecss": "^2.3.0",
     "@zeit/next-css": "^1.0.1",
-    "autoprefixer": "^9.7.5",
-    "lodash": "^4.17.15",
-    "next": "^9.3.2",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "standard": "^14.3.3",
-    "tailwindcss": "^1.2.0"
+    "autoprefixer": "^9.8.5",
+    "lodash": "^4.17.19",
+    "next": "^9.4.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "standard": "^14.3.4",
+    "tailwindcss": "^1.4.6"
   }
 }
