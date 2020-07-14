@@ -11,7 +11,7 @@ import {
 function Head ({
   title,
   appendDefaultTitle = true,
-  titleSuffix = ' | ',
+  titleSuffix = ' - ',
   description,
   router
 }) {

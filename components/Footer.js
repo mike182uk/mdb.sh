@@ -3,7 +3,7 @@ export default function Footer () {
 
   return (
     <footer className='text-center text-base font-hairline mb-2'>
-      <p>© Michael Barrett {year}</p>
+      <p>&copy; Michael Barrett {year}</p>
     </footer>
   )
 }

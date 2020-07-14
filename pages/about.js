@@ -11,8 +11,8 @@ import Page from '../components/Page'
 export default function About () {
   return (
     <Page
-      title='About'
-      seoTitle='About'
+      title='About Me'
+      seoTitle='About Me'
     >
       <div className='text-center'>
         <Avatar
