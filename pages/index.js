@@ -31,7 +31,7 @@ export default function Index () {
           <h1 className='text-5xl font-black text-center leading-none mb-8'>
             <Greeting /> I'm Mike.
           </h1>
-          <h2 className='text-2xl font-hairline text-center leading-snug mb-8'>Fullstack Software Engineer based in West Yorkshire, UK</h2>
+          <h2 className='text-2xl font-thin text-center leading-snug mb-8'>Fullstack Software Engineer based in West Yorkshire, UK</h2>
           <ul className='mb-8 text-center'>
             {
               [
