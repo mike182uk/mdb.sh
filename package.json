@@ -14,24 +14,23 @@
     "url": "git+https://github.com/mike182uk/mdb.sh.git"
   },
   "engines": {
-    "node": "12.x"
+    "node": "15.x"
   },
   "scripts": {
     "dev": "next",
     "lint": "standard"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.29",
-    "@fortawesome/free-brands-svg-icons": "^5.13.1",
-    "@fortawesome/react-fontawesome": "^0.1.11",
-    "@fullhuman/postcss-purgecss": "^2.3.0",
-    "@zeit/next-css": "^1.0.1",
-    "autoprefixer": "^9.8.5",
-    "lodash": "^4.17.19",
-    "next": "^9.4.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "standard": "^14.3.4",
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@fullhuman/postcss-purgecss": "^4.0.0",
+    "autoprefixer": "^10.2.4",
+    "lodash": "^4.17.20",
+    "next": "^10.0.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "standard": "^16.0.3",
     "tailwindcss": "^1.4.6"
   }
 }
