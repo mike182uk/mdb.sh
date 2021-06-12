@@ -1,8 +1,5 @@
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
-
-import {
-  GOOGLE_ANALYTICS_SITE_ID
-} from '../constants'
+import { GOOGLE_ANALYTICS_SITE_ID } from '../constants'
 
 export default class Document extends NextDocument {
   render () {
@@ -13,18 +10,17 @@ export default class Document extends NextDocument {
             rel='stylesheet'
             href='https://fonts.googleapis.com/css?family=Roboto:100,300,900'
           />
-          <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_SITE_ID}`}
-          />
+          <script async src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_SITE_ID}`} />
           <script
             dangerouslySetInnerHTML={{
               __html: `
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', '${GOOGLE_ANALYTICS_SITE_ID}');
-            `
+                gtag('config', '${GOOGLE_ANALYTICS_SITE_ID}', {
+                  page_path: window.location.pathname,
+                });
+              `
             }}
           />
         </Head>
