@@ -1,6 +1,10 @@
 const { colors, spacing } = require('tailwindcss/defaultTheme')
 
 module.exports = {
+  purge: [
+    './components/*.js',
+    './pages/*.js'
+  ],
   theme: {
     extend: {
       colors: {
