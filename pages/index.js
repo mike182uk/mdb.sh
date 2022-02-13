@@ -25,7 +25,7 @@ export default function Index () {
       <div className='container mx-auto flex h-full'>
         <main className='m-auto flex flex-col items-center p-4'>
           <Avatar
-            size={150}
+            size={200}
             className='rounded-full shadow-md mb-8'
           />
           <h1 className='text-5xl font-black text-center leading-none mb-8'>

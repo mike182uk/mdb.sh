@@ -11,7 +11,6 @@ import Page from '../components/Page'
 export default function About () {
   return (
     <Page
-      title='About Me'
       seoTitle='About Me'
     >
       <div className='text-center'>
@@ -20,7 +19,7 @@ export default function About () {
           className='rounded-full shadow-md mb-2 inline-block'
         />
         <p>Hi there! I'm Mike, a fullstack software engineer 🤓 based in <ExternalLink href='https://www.google.co.uk/maps/place/West+Yorkshire'>West Yorkshire (UK)</ExternalLink>.</p>
-        <p>I'm passionate about building great technical solutions to problems using a variety of technologies, programming languages & development methodologies.</p>
+        <p>I'm passionate about about delivering robust, scalable and maintainable software solutions using a variety of technologies, programming languages & development methodologies.</p>
         <p>I currently work for <ExternalLink href='https://www.teamwork.com'>Teamwork.com</ExternalLink> (remotely), helping build <ExternalLink href='https://www.teamwork.com/chat'>Teamwork Chat</ExternalLink>.</p>
         <p>This website is a place for me to share my thoughts and experience working as a software engineer, as well as things that I find interesting, challenging, or that may be of use to others (and my future self 😃).</p>
         <p>You can follow me on <ExternalLink href={TWITTER_URL}>Twitter</ExternalLink>, see my open source projects on <ExternalLink href={GITHUB_URL}>GitHub</ExternalLink>, connect with me on <ExternalLink href={LINKEDIN_URL}>LinkedIn</ExternalLink> or check out out what I'm currently listening to on <ExternalLink href={LASTFM_URL}>Last.fm</ExternalLink>.</p>

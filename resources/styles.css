@@ -1,11 +1,10 @@
-/* purgecss start ignore */
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
 
 #__next {
   @apply h-full;
 }
-/* purgecss end ignore */
 
 ::selection {
   background-color: theme('colors.primaryLight');
@@ -15,7 +14,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover, a.active {
   text-decoration: underline;
   color: theme('colors.primary');
 }
@@ -27,5 +26,3 @@ main a {
 main p {
   margin: theme('spacing.mainContent') 0;
 }
-
-@tailwind utilities;

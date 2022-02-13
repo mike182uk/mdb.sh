@@ -1,15 +1,16 @@
-const { colors, spacing } = require('tailwindcss/defaultTheme')
+const { spacing } = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors')
 
 module.exports = {
-  purge: [
+  content: [
     './components/*.js',
     './pages/*.js'
   ],
   theme: {
     extend: {
       colors: {
-        primary: colors.red['500'],
-        primaryLight: colors.red['100']
+        primary: colors.rose['500'],
+        primaryLight: colors.rose['100']
       },
       fontFamily: {
         body: ['Roboto', 'sans-serif']
