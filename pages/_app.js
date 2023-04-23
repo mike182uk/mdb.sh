@@ -1,12 +1,11 @@
 import { config } from '@fortawesome/fontawesome-svg-core'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
-
-import '@fortawesome/fontawesome-svg-core/styles.css'
-config.autoAddCss = false
-
 import { pageview } from '../lib/gtag'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 import '../resources/styles.css'
+
+config.autoAddCss = false
 
 const App = ({ Component, pageProps }) => {
   const router = useRouter()
