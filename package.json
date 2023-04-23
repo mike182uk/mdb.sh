@@ -14,7 +14,7 @@
     "url": "git+https://github.com/mike182uk/mdb.sh.git"
   },
   "engines": {
-    "node": "14.x"
+    "node": "18.x"
   },
   "scripts": {
     "dev": "next",
