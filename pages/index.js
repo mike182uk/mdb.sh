@@ -61,6 +61,7 @@ export default function Index () {
                       className='transition duration-100 ease-in-out transform hover:-translate-y-1 hover:scale-110'
                       icon={icon}
                       size='2x'
+                      fixedWidth
                     />
                   </ExternalLink>
                 </li>

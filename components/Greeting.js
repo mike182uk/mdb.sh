@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 const sample = require('lodash/sample')
 
 export default function Greeting () {
@@ -13,7 +14,11 @@ export default function Greeting () {
     'Olá'
   ]
 
+  const [greeting, setGreeting] = useState('Hey')
+
+  useEffect(() => setGreeting(sample(greetings)), [])
+
   return (
-    <span>{sample(greetings)}!</span>
+    <span>{greeting}!</span>
   )
 }

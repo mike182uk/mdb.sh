@@ -20,14 +20,14 @@ export default function Nav ({
     <nav className={`leading-none ${className}`}>
       <ul>
         <li className='inline-block'>
-          <Link href='/about'>
-            <a className={getClasses('/about')}>About</a>
+          <Link href='/about' className={getClasses('/about')}>
+            About
           </Link>
         </li>
         <li className='inline-block mx-1'>·</li>
         <li className='inline-block'>
-          <Link href='/posts'>
-            <a className={getClasses('/posts')}>Posts</a>
+          <Link href='/posts' className={getClasses('/posts')}>
+            Posts
           </Link>
         </li>
       </ul>
