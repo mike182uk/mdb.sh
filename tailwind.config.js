@@ -1,10 +1,11 @@
 const { spacing } = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './components/*.js',
-    './pages/*.js'
+    './src/components/*.tsx',
+    './src/app/*.tsx'
   ],
   theme: {
     extend: {
@@ -13,7 +14,7 @@ module.exports = {
         primaryLight: colors.rose['100']
       },
       fontFamily: {
-        body: ['Roboto', 'sans-serif']
+        body: ['var(--font-roboto)', 'sans-serif']
       },
       spacing: {
         mainContent: spacing['10']

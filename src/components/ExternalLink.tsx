@@ -1,6 +1,9 @@
-export default function ExternalLink ({
+export default function ExternalLink({
   href,
-  children
+  children,
+}: {
+  href: string
+  children: React.ReactNode
 }) {
   return (
     <a

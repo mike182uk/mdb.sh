@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
-import Nav from './Nav'
+import Nav from '@/components/Nav'
 
-export default function Header () {
+export default function Header() {
   return (
     <header className='flex flex-col items-center md:flex-row md:justify-between'>
       <h1 className='text-5xl font-black leading-none text-center mt-4 mb-4'>

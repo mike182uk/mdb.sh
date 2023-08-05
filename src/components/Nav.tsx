@@ -1,15 +1,19 @@
+'use client';
+
 import Link from 'next/link'
-import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
 
-export default function Nav ({
-  className
+export default function Nav({
+  className = '',
+}: {
+  className?: string
 }) {
-  const router = useRouter()
+  const pathname = usePathname()
 
-  const getClasses = (path) => {
+  const getClasses = (path: string): string => {
     const classes = ['no-underline']
 
-    if (router.pathname === path) {
+    if (pathname === path) {
       classes.push('active')
     }
 

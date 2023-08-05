@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-#__next {
-  @apply h-full;
-}
-
 ::selection {
   background-color: theme('colors.primaryLight');
 }
