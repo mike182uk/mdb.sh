@@ -1,5 +1,6 @@
 import { Roboto } from 'next/font/google'
 import Script from 'next/script'
+import { Analytics } from '@vercel/analytics/react';
 
 import {
   GOOGLE_ANALYTICS_SITE_ID,
@@ -36,6 +37,7 @@ export default function RootLayout({
       </head>
       <body className='font-body text-lg text-black leading-loose border-primary border-solid border-t-8 bg-white h-screen'>
         {children}
+        <Analytics />
       </body>
     </html>
   )
