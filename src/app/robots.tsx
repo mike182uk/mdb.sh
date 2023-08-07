@@ -1,6 +1,6 @@
 import { SITE_URL } from '@/lib/constants'
 
-export default function robotsTxt() {
+export default function RobotsTxt() {
   return {
     rules: [
       {
