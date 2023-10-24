@@ -22,13 +22,13 @@ export default function Nav({
 
   return (
     <nav className={`leading-none ${className}`}>
-      <ul>
+      <ul className='space-x-1'>
         <li className='inline-block'>
           <Link href='/about' className={getClasses('/about')}>
             About
           </Link>
         </li>
-        <li className='inline-block mx-1'>·</li>
+        <li className='inline-block'>·</li>
         <li className='inline-block'>
           <Link href='/posts' className={getClasses('/posts')}>
             Posts

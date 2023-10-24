@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function PostsPage() {
   return (
     <>
-      <p className='text-center text-2xl font-black leading-none -mb-0'>I&apos;ve not published any posts yet.</p>
+      <p className='text-center text-2xl font-black leading-none'>I&apos;ve not published any posts yet.</p>
       <p className='text-center leading-none'>But when i do, they will show here 🙃</p>
     </>
   )

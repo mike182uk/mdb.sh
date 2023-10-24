@@ -7,7 +7,6 @@ import {
   GRAVATAR_USERNAME_HASH,
 } from '@/lib/constants'
 
-import '@fortawesome/fontawesome-svg-core/styles.css'
 import './global.css'
 
 const roboto = Roboto({

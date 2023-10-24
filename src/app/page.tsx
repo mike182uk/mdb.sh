@@ -1,19 +1,13 @@
 import sample from 'lodash/sample'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faGithub,
-  faLastfm,
-  faLinkedinIn,
-  faTwitter,
-} from '@fortawesome/free-brands-svg-icons'
 import type { Metadata } from 'next'
+import Image from 'next/image'
 
 import {
   GITHUB_URL,
   LASTFM_URL,
   LINKEDIN_URL,
-  TWITTER_URL,
+  X_URL,
 } from '@/lib/constants'
 import { getCanonicalUrl, getDescription, getTitle } from '@/lib/metadata'
 import styles from './home.module.css'
@@ -44,6 +38,7 @@ export default function HomePage() {
     'Hey',
     'Howdy',
     'Olá',
+    'Yo'
   ]
 
   const gestures = [
@@ -65,45 +60,51 @@ export default function HomePage() {
 
   return (
     <div className='container mx-auto flex h-full'>
-      <main className='m-auto flex flex-col items-center p-4'>
+      <main className='m-auto flex flex-col items-center p-4 space-y-10'>
         <Avatar
           size={200}
-          className='rounded-full shadow-md mb-8'
+          className='rounded-full shadow-md'
         />
-        <h1 className='text-5xl font-black text-center leading-none mb-8'>
+        <h1 className='text-5xl text-center font-black leading-none'>
           <span>{sample(greetings)}!</span> I&apos;m Mike <span className={gesture.cssClass}>{gesture.emoji}</span>
         </h1>
-        <h2 className='text-2xl font-thin text-center leading-snug mb-8'>Fullstack Software Engineer based in West Yorkshire, UK</h2>
-        <ul className='mb-8 text-center'>
+        <h2 className='text-2xl text-center font-thin leading-snug'>Fullstack Software Engineer based in West Yorkshire, UK</h2>
+        <ul className='space-x-4 text-center'>
           {
+            // https://www.npmjs.com/package/simple-icons
             [
               {
-                href: TWITTER_URL,
-                icon: faTwitter
+                href: X_URL,
+                alt: 'X Logo',
+                icon: 'x',
               },
               {
                 href: GITHUB_URL,
-                icon: faGithub
+                alt: 'GitHub Logo',
+                icon: 'github'
               },
               {
                 href: LINKEDIN_URL,
-                icon: faLinkedinIn
+                alt: 'LinkedIn Logo',
+                icon: 'linkedin'
               },
               {
                 href: LASTFM_URL,
-                icon: faLastfm
+                alt: 'Last.fm Logo',
+                icon: 'lastdotfm'
               }
-            ].map(({ href, icon }, idx) => (
+            ].map(({ href, alt, icon }, idx) => (
               <li
-                className='inline-block px-3'
+                className='inline-block'
                 key={idx}
               >
                 <ExternalLink href={href}>
-                  <FontAwesomeIcon
+                  <Image
                     className='transition duration-100 ease-in-out transform hover:-translate-y-1 hover:scale-110'
-                    icon={icon}
-                    size='2x'
-                    fixedWidth
+                    src={`https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/${icon}.svg`}
+                    alt={alt}
+                    width={32}
+                    height={32}
                   />
                 </ExternalLink>
               </li>
