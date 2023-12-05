@@ -23,7 +23,9 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="text-center">
-      <Avatar size={200} className="mb-2 inline-block rounded-full shadow-md" />
+      <p>
+        <Avatar size={200} className="inline-block rounded-full shadow-md" />
+      </p>
       <p>
         Hey! I&apos;m Mike, a fullstack software engineer based in West
         Yorkshire, UK.
