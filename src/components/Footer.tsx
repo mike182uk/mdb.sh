@@ -1,10 +1,10 @@
-'use client'
+"use client"
 
 export default function Footer() {
-  const year = (new Date()).getFullYear()
+  const year = new Date().getFullYear()
 
   return (
-    <footer className='text-center text-base font-thin pb-4'>
+    <footer className="pb-4 text-center text-base font-thin">
       <p>&copy; Michael Barrett {year}</p>
     </footer>
   )

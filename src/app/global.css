@@ -3,16 +3,17 @@
 @tailwind utilities;
 
 ::selection {
-  background-color: theme('colors.primaryLight');
+  background-color: theme("colors.primaryLight");
 }
 
 a {
   text-decoration: none;
 }
 
-a:hover, a.active {
+a:hover,
+a.active {
   text-decoration: underline;
-  color: theme('colors.primary');
+  color: theme("colors.primary");
 }
 
 main a {
@@ -20,5 +21,5 @@ main a {
 }
 
 main p {
-  margin: theme('spacing.mainContent') 0;
+  margin: theme("spacing.mainContent") 0;
 }

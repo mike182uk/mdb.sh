@@ -1,5 +1,5 @@
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
+import Footer from "@/components/Footer"
+import Header from "@/components/Header"
 
 export default function PageLayout({
   children,
@@ -7,9 +7,9 @@ export default function PageLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className='container mx-auto max-w-3xl p-4 h-full flex flex-col'>
+    <div className="container mx-auto flex h-full max-w-3xl flex-col p-4">
       <Header />
-      <main className='my-8 flex-1 flex flex-col justify-center'>
+      <main className="my-8 flex flex-1 flex-col justify-center">
         {children}
       </main>
       <Footer />

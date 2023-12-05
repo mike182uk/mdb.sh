@@ -1,24 +1,26 @@
-import type { Metadata } from 'next'
+import type { Metadata } from "next"
 
-import { getCanonicalUrl, getDescription, getTitle } from '@/lib/metadata'
+import { getCanonicalUrl, getDescription, getTitle } from "@/lib/metadata"
 
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
+import Footer from "@/components/Footer"
+import Header from "@/components/Header"
 
 export const metadata: Metadata = {
   title: getTitle(),
   description: getDescription(),
   alternates: {
-    canonical: getCanonicalUrl()
-  }
+    canonical: getCanonicalUrl(),
+  },
 }
 
 export default function NotFoundPage() {
   return (
-    <div className='container mx-auto max-w-3xl p-4 h-full flex flex-col'>
+    <div className="container mx-auto flex h-full max-w-3xl flex-col p-4">
       <Header />
-      <main className='flex-1 flex flex-col justify-center'>
-        <p className='text-center text-2xl font-black'>What was once here, is no longer</p>
+      <main className="flex flex-1 flex-col justify-center">
+        <p className="text-center text-2xl font-black">
+          What was once here, is no longer
+        </p>
       </main>
       <Footer />
     </div>

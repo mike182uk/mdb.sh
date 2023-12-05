@@ -1,10 +1,10 @@
-import { SITE_URL } from '@/lib/constants'
+import { SITE_URL } from "@/lib/constants"
 
 export default function RobotsTxt() {
   return {
     rules: [
       {
-        userAgent: '*',
+        userAgent: "*",
       },
     ],
     host: SITE_URL,

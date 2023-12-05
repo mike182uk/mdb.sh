@@ -1,36 +1,32 @@
-'use client';
+"use client"
 
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import Link from "next/link"
+import { usePathname } from "next/navigation"
 
-export default function Nav({
-  className = '',
-}: {
-  className?: string
-}) {
+export default function Nav({ className = "" }: { className?: string }) {
   const pathname = usePathname()
 
   const getClasses = (path: string): string => {
-    const classes = ['no-underline']
+    const classes = ["no-underline"]
 
     if (pathname === path) {
-      classes.push('active')
+      classes.push("active")
     }
 
-    return classes.join(' ')
+    return classes.join(" ")
   }
 
   return (
     <nav className={`leading-none ${className}`}>
-      <ul className='space-x-1'>
-        <li className='inline-block'>
-          <Link href='/about' className={getClasses('/about')}>
+      <ul className="space-x-1">
+        <li className="inline-block">
+          <Link href="/about" className={getClasses("/about")}>
             About
           </Link>
         </li>
-        <li className='inline-block'>·</li>
-        <li className='inline-block'>
-          <Link href='/posts' className={getClasses('/posts')}>
+        <li className="inline-block">·</li>
+        <li className="inline-block">
+          <Link href="/posts" className={getClasses("/posts")}>
             Posts
           </Link>
         </li>
