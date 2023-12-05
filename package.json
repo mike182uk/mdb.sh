@@ -11,10 +11,10 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mike182uk/mdb.sh.git"
+    "url": "git@github.com:mike182uk/mdb.sh.git"
   },
   "engines": {
-    "node": "18.x"
+    "node": "18"
   },
   "scripts": {
     "dev": "next dev",
