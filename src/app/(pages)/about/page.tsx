@@ -31,9 +31,9 @@ export default function AboutPage() {
         Yorkshire, UK.
       </p>
       <p>
-        I&apos;m passionate about about delivering robust, scalable and
-        maintainable software solutions using a variety of technologies,
-        programming languages & development methodologies.
+        I&apos;m passionate about delivering robust, scalable and maintainable
+        software solutions using a variety of technologies, programming
+        languages & development methodologies.
       </p>
       <p>
         I currently work for{" "}
