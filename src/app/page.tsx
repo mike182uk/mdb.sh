@@ -63,7 +63,7 @@ export default function HomePage() {
           <span className={gesture.cssClass}>{gesture.emoji}</span>
         </h1>
         <h2 className="text-center text-2xl font-thin leading-snug">
-          Fullstack Software Engineer based in West Yorkshire, UK
+          Full-stack software engineer based in West Yorkshire, UK.
         </h2>
         <ul className="space-x-4 text-center">
           {

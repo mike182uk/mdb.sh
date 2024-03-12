@@ -27,13 +27,13 @@ export default function AboutPage() {
         <Avatar size={200} className="inline-block rounded-full shadow-md" />
       </p>
       <p>
-        Hey! I&apos;m Mike, a fullstack software engineer based in West
+        Hey! I&apos;m Mike, a full-stack software engineer based in West
         Yorkshire, UK.
       </p>
       <p>
-        I&apos;m passionate about delivering robust, scalable and maintainable
+        I&apos;m passionate about delivering robust, scalable, and maintainable
         software solutions using a variety of technologies, programming
-        languages & development methodologies.
+        languages, and development methodologies.
       </p>
       <p>
         I currently work for{" "}
@@ -48,7 +48,7 @@ export default function AboutPage() {
       </p>
       <p>
         You can follow me on <ExternalLink href={X_URL}>X</ExternalLink>, see my
-        open source projects on{" "}
+        open-source projects on{" "}
         <ExternalLink href={GITHUB_URL}>GitHub</ExternalLink>, connect with me
         on <ExternalLink href={LINKEDIN_URL}>LinkedIn</ExternalLink> or check
         out out what I&apos;m currently listening to on{" "}
